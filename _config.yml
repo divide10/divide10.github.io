@@ -2,8 +2,8 @@
 title: 除10
 email: divide10@outlook.com
 description: 原来你也在这里
-baseurl: ""
-url: "http://yourdomain.com"
+#baseurl: ""
+url: "http://divide10.github.io/"
 #twitter_username: jekyllrb
 github_username:  divide10
 
