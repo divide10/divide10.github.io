@@ -8,7 +8,7 @@ nametitle = raw_input("File name (Example ***-***-):\n")
 headdic["title"] = raw_input("Blog title:\n")
 headdic["categories"] = raw_input("Categories:\n")
 
-text ='---\n'+"\n".join(["%s = %s" %(k,v) for k,v in headdic.items()]) + '\n---'
+text ='---\n'+"\n".join(["%s : %s" %(k,v) for k,v in headdic.items()]) + '\n---'
 mkname = headdic["date"] + '-'+nametitle+'.markdown'
 
 f = open(mkname,'w+') 
