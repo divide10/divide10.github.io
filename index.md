@@ -1,46 +1,15 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: 原来你也这里!
+tagline: 除10的网络日志
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+## 缘起
+不知从何时起，发现自己的记忆渐渐变得模糊，很多人很多事都慢慢地淡出了脑海，甚至偶然间碰到儿时的玩伴，却也叫不出名字，只是轻轻地说声：“咦，你在这里啊。” 
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+难道是自己变老了？不啊，我还是个90后，正值风华正茂、意气风发之时，正是为祖国和社会努力奉献之时，正是为了实现自己的梦想而奋斗前行之时。
 
-## Update Author Attributes
+那么原因是什么？还记得初中，在放学的路上，能和小伙伴们将今天历史课的教授内容娓娓道来，能将政治书一整本书一字不差地记下来（当然这是大部分中国学生所具有的能力）。而如今，在大学里，每次“毛邓三”、“马克思原理”等处于及格边缘的，却是不敢想的。回顾自己的这段时间的学生生涯，自本科选择理工科之后，学习生活中充斥着数学逻辑、编程实践，记忆能力使用得越来越少，这应该是我记忆变得模糊的主要原因吧^^!
 
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
-
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
-
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
-
-
+因此希望找个能收集自己记忆的角落，来记录生活之琐碎、科研之点滴、技术之感悟，当n年后，即使有些人有些事也记不起来了，再回来翻阅这一篇篇日志，我会说：“哦，原来你也在这里。”
