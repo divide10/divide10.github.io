@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 原来你也这里!
-tagline: 除10的网络日志
+title: 原来你也这里
+tagline: --除10的网络日志
 ---
 {% include JB/setup %}
 
