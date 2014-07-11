@@ -11,11 +11,11 @@ pygments: true
 title : 除10的网络日志
 tagline: Site Tagline
 author : Devin Chen
-  name : Devin Chen
-  email : divide10@outlook.com
-  github : divide10
-  # twitter : username
-  # feedburner : feedname
+name : Devin Chen
+email : divide10@outlook.com
+github : divide10
+# twitter : username
+# feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
