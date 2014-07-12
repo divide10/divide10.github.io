@@ -11,6 +11,11 @@
 	<link href='{{ ASSET_PATH }}/css/style.css' rel="stylesheet" media="all">
 	<link href="http://feeds.feedburner.com/{{ site.author.feedbaname }}" rel="alternate" title="{{ page.title }}" type="application/atom+xml">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+	
+	<!-- 配置并链接 MathJax 库 -->
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+
 </head>
 <body>
 
@@ -47,10 +52,10 @@
 				<div class="misc vcard">
 					<h4>about</h4>
 					<ul>
-						<li class="contact"><address><span class="author fn n">{{ site.author }}</span> - <span class="fn email">{{ site.email }}</span></address></li>
-						<li class="github"><a href="http://github.com/{{ site.github }}/" rel="me">github.com/{{ site.github }}</a></li>
+						<li class="contact"><address><span class="author fn n">{{ site.author.name }}</span> - <span class="fn email">{{ site.author.email }}</span></address></li>
+						<li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me">github.com/{{ site.author.github }}</a></li>
 						<!-- <li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/" rel="me">twitter.com/{{ site.twitter }}</a></li> -->
-						<li class="rss"><a href="http://divide10.github.io/atom.xml">RSS订阅</a></li>
+						<li class="rss"><a href="{{site.production_url}}/atom.xml">RSS订阅</a></li>
 					</ul>
 				</div><!-- misc -->
 				<p class="licence">

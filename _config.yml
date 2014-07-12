@@ -3,19 +3,23 @@
 permalink: /:categories/:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-pygments: true
+highlighter: true
+markdown: pandoc
+pandoc:
+  format: html5
+  extension: [smart,mathjax]
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
 title : 除10的网络日志
 tagline: Site Tagline
-author : Devin Chen
-name : Devin Chen
-email : divide10@outlook.com
-github : divide10
-# twitter : username
-# feedburner : feedname
+author : 
+  name : Devin Chen
+  email : divide10@outlook.com
+  github : divide10
+  # twitter : username
+  feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
