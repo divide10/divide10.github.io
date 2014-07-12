@@ -26,11 +26,14 @@ tags: [STAP,Beamforming]
 
 空域波束形成，即使输出响应在某一方向$$\theta_{0}$$最大。数学模型表示为：
 \begin{equation}
-    y = \sum\_{n=1}^{N}w\_{n}^{*}s\_{n}=\mathbf{w}^{'}\mathbf{s}
+    y = \sum\_{n=1}^{N}w\_{n}^{*}s\_{n}=\mathbf{w}^{T}\mathbf{s}
 \end{equation}  
 
-
-
-
+波束形成最优化问题即为：
+\begin{equation}
+    \max_{w}|y|^{2}=\max_{w}|\mathbf{w}^{T}\mathbf{s}|^{2} \\
+    s.t. ||w||^2= \text{constant} < \inf
+\end{equation}  
+约束条件用来确保其可解性。
 
 
