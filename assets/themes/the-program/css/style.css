@@ -192,6 +192,10 @@ Embedded content from [HTML5 Boilerplate](http://j.mp/rP0wmY)
 
 No styleguide reference.
 */
+.center{
+        margin:0 auto;
+        display:block;
+        }
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
