@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+        <title>除10的网络日志</title>
+        <description>除10的网络日志 - Devin Chen</description>
+        <link>http://divide10.github.io</link>
+        <link>http://divide10.github.io</link>
+        <lastBuildDate>2014-08-06T00:08:23+08:00</lastBuildDate>
+        <pubDate>2014-08-06T00:08:23+08:00</pubDate>
+        <ttl>1800</ttl>
+
+
+        <item>
+                <title>ch2 最优空域波束形成</title>
+                <description>&lt;!--  --&gt;
+&lt;p&gt;最优空域波束形成的内容位于书中的2.2节，首先对随机相位信号的最优波束形成进行推导，接下来引入随机干扰量（包括热噪声、干扰信号和杂波），建立信噪比最优的波束形成问题，最后对加性白噪声和加性色噪声两种特殊情形下的最优波束形成问题进行研究。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;随机相位波束形成&lt;/h2&gt;
+&lt;p&gt;假设接收的电磁波是单位幅度的窄带平面波，接收的天线阵列是N元均匀线性阵列(ULA)，模型如下图所示:&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;center&quot; src=&quot;/public/img/STAP_figure2_1.png&quot; alt=&quot;STAP_figure2_1&quot; width=&quot;500px&quot; /&gt;  &lt;/p&gt;
+
+&lt;p&gt;阵元间距：d&lt;br /&gt;
+窄带B限制条件：&lt;script type=&quot;math/tex&quot;&gt;\frac{c}{B}&gt;&gt;Nd&lt;/script&gt;，以确保传播延时可转换成相移，方便处理。在第4章中进一步研究带宽有限造成的影响。&lt;br /&gt;
+波达角度（AOA）:&lt;script type=&quot;math/tex&quot;&gt;\theta_{0}&lt;/script&gt;&lt;br /&gt;
+第&lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt;个阵列元接收信号用基带复包络信号表示为：&lt;br /&gt;
+\begin{equation}
+    S_{n}=e^{j2\pi(n-1)\frac{d}{\lambda}\sin{\theta_{0}}}， n=1,\cdots,N&lt;br /&gt;
+\end{equation}
+其中,&lt;script type=&quot;math/tex&quot;&gt;\lambda&lt;/script&gt;: 电磁波波长。&lt;/p&gt;
+
+&lt;p&gt;空域波束形成，即使输出响应在某一方向&lt;script type=&quot;math/tex&quot;&gt;\theta_{0}&lt;/script&gt;最大。数学模型表示为：
+\begin{equation}
+    y = \sum_{n=1}^{N}w_{n}^{*}s_{n}=\mathbf{w}^{T}\mathbf{s}
+\end{equation}  &lt;/p&gt;
+
+&lt;p&gt;波束形成最优化问题即为：
+\begin{equation}
+    \max&lt;em&gt;{w}|y|^{2}=\max&lt;/em&gt;{w}|\mathbf{w}^{T}\mathbf{s}|^{2} &lt;br /&gt;
+    s.t. ||w||^2= \text{constant} &amp;lt; \inf
+\end{equation}&lt;br /&gt;
+约束条件用来确保其可解性。&lt;/p&gt;
+
+</description>
+                <link>http://divide10.github.io/stap%20for%20radar/2014/07/12/ch2-optimal-spatial-beamforming</link>
+                <guid>http://divide10.github.io/stap%20for%20radar/2014/07/12/ch2-optimal-spatial-beamforming</guid>
+                <pubDate>2014-07-12T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>STAP for Radar-Book Organization</title>
+                <description>&lt;h3 id=&quot;section&quot;&gt;起因&lt;/h3&gt;
+&lt;p&gt;由于研究的需要，开始阅读J.R.Guerci的&lt;strong&gt;Space-Time Adaptive Processing for Radar&lt;/strong&gt;。本书一共有6个章节，为以后阅读的方便性和目标性，在此将第一章Introduction中的Book Organization进行摘录。&lt;/p&gt;
+
+&lt;h3 id=&quot;chapter-2&quot;&gt;Chapter 2&lt;/h3&gt;
+&lt;p&gt;一维均匀线性阵列（1-D ULA）自适应阵列处理的基本概念。&lt;/p&gt;
+
+&lt;p&gt;最优波束形成：最大化信杂噪比（SINR）。&lt;/p&gt;
+
+&lt;p&gt;干扰协方差矩阵：R&lt;/p&gt;
+
+&lt;p&gt;R未知时，利用自适应阵列进行估计。&lt;/p&gt;
+
+&lt;p&gt;基于自适应博士形成的样本协方差：自适应波束的特征分析，运用主成分方法，以减小由于样本有限产生的不良影响。&lt;/p&gt;
+
+&lt;p&gt;解决State weights problem: &lt;strong&gt;CMTs&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;chapter-3&quot;&gt;Chapter 3&lt;/h3&gt;
+&lt;p&gt;空载动目标显示（MTI）雷达的信号和干扰模型。&lt;/p&gt;
+
+&lt;p&gt;ULA雷达的地杂波二维特性，Brennan‘s rule。
+杂波协方差阵估计问题。&lt;/p&gt;
+
+&lt;h3 id=&quot;chapter-4&quot;&gt;Chapter 4&lt;/h3&gt;
+&lt;p&gt;影响STAP性能的重要因素：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;信道不匹配（带宽有限）&lt;/li&gt;
+  &lt;li&gt;ICM&lt;/li&gt;
+  &lt;li&gt;Antenna crabbing?&lt;/li&gt;
+  &lt;li&gt;ISL effects&lt;/li&gt;
+  &lt;li&gt;Clutter heterogeneity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;chapter-5&quot;&gt;Chapter 5&lt;/h3&gt;
+&lt;p&gt;STAP算法基本原理&lt;/p&gt;
+
+&lt;h3 id=&quot;chapter-6&quot;&gt;Chapter 6&lt;/h3&gt;
+&lt;p&gt;6.2 STAP的统计学基础&lt;br /&gt;
+加性高斯白噪声模型下，基于干扰协方差矩阵，最大信杂噪比或最小均方差的空时波束形成是统计意义下的最优解。&lt;/p&gt;
+
+&lt;p&gt;6.3 讨论基本的实时实现（Real time complementation）问题，并着重强调了数据域（data-dormain）QR因子分解。&lt;br /&gt;
+高效率的并行处理方法是样本矩阵求逆（sample matrix inverse，SMI）。&lt;br /&gt;
+扩展：对角装载（diag-loading）， CMT：鲁棒性STAP算法。&lt;/p&gt;
+
+&lt;p&gt;最后引入知识辅助空时自适应处理（knowledge-aided STAP），以适应十分复杂的杂波环境。&lt;/p&gt;
+</description>
+                <link>http://divide10.github.io/stap/2014/07/10/STAP-for-radar-book-organization</link>
+                <guid>http://divide10.github.io/stap/2014/07/10/STAP-for-radar-book-organization</guid>
+                <pubDate>2014-07-10T00:00:00+08:00</pubDate>
+        </item>
+
+
+</channel>
+</rss>

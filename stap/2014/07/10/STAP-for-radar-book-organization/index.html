@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>STAP for Radar-Book Organization</title>
+	<meta name="author" content="Devin Chen">
+	<link href='/assets/themes/the-program/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/" rel="alternate" title="STAP for Radar-Book Organization" type="application/atom+xml">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+	<!-- mathjax -->
+	<script type="text/javascript"
+    	src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+
+	<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+        "HTML-CSS": {linebreaks: {automatic: true}},
+        SVG: {linebreaks: {automatic: true}}
+    });
+	</script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<nav class="nav-global">
+					<ul>
+						<li class="logo"><a href="/">除10的网络日志</a></li>
+						<li class="archive"><a href="/archive.html">archive</a></li>
+						<li class="page"><a href="/pages.html">pages</a></li>
+						<li class="category"><a href="/categories.html">categories</a></li>
+						<li class="tag"><a href="/tags.html">tags</a></li>
+				<!-- 		<li class="forkme"><div><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=plusjade&repo=jekyll-bootstrap&type=fork&count=true"
+									allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></div></li> -->
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">STAP for Radar-Book Organization</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					<h3 id="section">起因</h3>
+<p>由于研究的需要，开始阅读J.R.Guerci的<strong>Space-Time Adaptive Processing for Radar</strong>。本书一共有6个章节，为以后阅读的方便性和目标性，在此将第一章Introduction中的Book Organization进行摘录。</p>
+
+<h3 id="chapter-2">Chapter 2</h3>
+<p>一维均匀线性阵列（1-D ULA）自适应阵列处理的基本概念。</p>
+
+<p>最优波束形成：最大化信杂噪比（SINR）。</p>
+
+<p>干扰协方差矩阵：R</p>
+
+<p>R未知时，利用自适应阵列进行估计。</p>
+
+<p>基于自适应博士形成的样本协方差：自适应波束的特征分析，运用主成分方法，以减小由于样本有限产生的不良影响。</p>
+
+<p>解决State weights problem: <strong>CMTs</strong></p>
+
+<h3 id="chapter-3">Chapter 3</h3>
+<p>空载动目标显示（MTI）雷达的信号和干扰模型。</p>
+
+<p>ULA雷达的地杂波二维特性，Brennan‘s rule。
+杂波协方差阵估计问题。</p>
+
+<h3 id="chapter-4">Chapter 4</h3>
+<p>影响STAP性能的重要因素：</p>
+
+<ul>
+  <li>信道不匹配（带宽有限）</li>
+  <li>ICM</li>
+  <li>Antenna crabbing?</li>
+  <li>ISL effects</li>
+  <li>Clutter heterogeneity</li>
+</ul>
+
+<h3 id="chapter-5">Chapter 5</h3>
+<p>STAP算法基本原理</p>
+
+<h3 id="chapter-6">Chapter 6</h3>
+<p>6.2 STAP的统计学基础<br />
+加性高斯白噪声模型下，基于干扰协方差矩阵，最大信杂噪比或最小均方差的空时波束形成是统计意义下的最优解。</p>
+
+<p>6.3 讨论基本的实时实现（Real time complementation）问题，并着重强调了数据域（data-dormain）QR因子分解。<br />
+高效率的并行处理方法是样本矩阵求逆（sample matrix inverse，SMI）。<br />
+扩展：对角装载（diag-loading）， CMT：鲁棒性STAP算法。</p>
+
+<p>最后引入知识辅助空时自适应处理（knowledge-aided STAP），以适应十分复杂的杂波环境。</p>
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2014-07-10T00:00:00+08:00" datetime="2014-07-10T00:00:00+08:00" pubdate>
+							<span class="month"><abbr>July</abbr></span>
+							<span class="day">10</span>
+							<span class="year">2014</span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">category: </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/categories.html#stap-ref">
+    		stap <span>1</span>
+    	</a></li>
+    
+  
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">tags: </li>
+							
+							
+
+
+  
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+<!-- 					<div class="comment">
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+					</div> -->
+
+					<!-- 多说评论框 start -->
+					<div class="ds-thread" data-thread-key="/stap/2014/07/10/STAP-for-radar-book-organization" data-title= "STAP for Radar-Book Organization" data-url="http://divide10.github.io//stap/2014/07/10/STAP-for-radar-book-organization"></div>
+					<!-- 多说评论框 end -->
+					<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+					<script type="text/javascript">
+					var duoshuoQuery = {short_name:"divide10"};
+						(function() {
+							var ds = document.createElement('script');
+							ds.type = 'text/javascript';ds.async = true;
+							ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+							ds.charset = 'UTF-8';
+							(document.getElementsByTagName('head')[0] 
+							 || document.getElementsByTagName('body')[0]).appendChild(ds);
+						})();
+						</script>
+					<!-- 多说公共JS代码 end -->
+
+				</div><!-- misc-content -->
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/stap%20for%20radar/2014/07/12/ch2-optimal-spatial-beamforming" title="View ch2 最优空域波束形成">ch2 最优空域波束形成 &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<h4>about</h4>
+					<ul>
+						<li class="contact"><address><span class="author fn n">Devin Chen</span> - <span class="fn email">divide10@outlook.com</span></address></li>
+						<li class="github"><a href="http://github.com/divide10/" rel="me">github.com/divide10</a></li>
+						<!-- <li class="twitter"><a href="http://twitter.com//" rel="me">twitter.com/</a></li> -->
+						<li class="rss"><a href="http://divide10.github.io/atom.xml">RSS订阅</a></li>
+					</ul>
+				</div><!-- misc -->
+				<p class="licence">
+					Theme: <a href="http://layouts-the.me">the_minimum</a> based on <a href="http://jekyllbootstrap.com/">Jekyll-bootstrap</a>.<br>
+					Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
+				</p>
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+	(function(d, s) {
+		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.src = url; js.id = id;
+		fjs.parentNode.insertBefore(js, fjs);
+		};
+	load('//platform.twitter.com/widgets.js', 'tweetjs');
+	// load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
+	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="/stap/2014/07/10/STAP-for-radar-book-organization" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
+	}(document, 'script'));
+</script>
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+  
+  
+</body>
+</html>
+

@@ -1,0 +1,12 @@
+
+http://divide10.github.io/archive.html
+http://divide10.github.io/atom.xml
+http://divide10.github.io/categories.html
+http://divide10.github.io/index.html
+http://divide10.github.io/pages.html
+http://divide10.github.io/rss.xml
+http://divide10.github.io/sitemap.txt
+http://divide10.github.io/tags.html
+
+http://divide10.github.io/stap%20for%20radar/2014/07/12/ch2-optimal-spatial-beamforming
+http://divide10.github.io/stap/2014/07/10/STAP-for-radar-book-organization
